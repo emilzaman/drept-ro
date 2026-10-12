@@ -32,7 +32,7 @@ Dacă scrii în `~/.claude/plugins/config/drept-ro/profil.md` rolul tău și dat
 
 ## Limite
 
-- Serverul conține legislația națională de pe legislatie.just.ro, în forma consolidată curentă. Pot lipsi ordinele unor instituții, procedurile ANAF, contractele colective, jurisprudența (în afara notelor din text) și textul regulamentelor UE.
+- Serverul conține legislația națională de pe legislatie.just.ro, în forma consolidată curentă. Unele acte UE sunt incluse (de exemplu GDPR). Pot lipsi ordinele unor instituții, procedurile ANAF, contractele colective, anexele unor acte, jurisprudența (în afara notelor din text) și multe acte UE.
 - Pentru fapte mai vechi, versiunea legii de la data faptelor trebuie verificată separat.
 - Răspunsurile sunt documentare juridică, nu consultanță. Pentru decizii cu miză (concedieri, contestații, contracte importante), verifică cu un avocat sau consultant fiscal.
 

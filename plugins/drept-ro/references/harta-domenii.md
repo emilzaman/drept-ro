@@ -22,7 +22,7 @@ Punct de plecare pentru a alege actele potrivite. Lista nu e completă. Dacă î
 | Spălarea banilor | `Legea 129/2019` | beneficiar real, obligații KYC |
 | Concurență | `Legea 21/1996` | înțelegeri, abuz de poziție dominantă |
 | Consumatori | `OG 21/1992`, `OUG 34/2014` (contracte la distanță), `Legea 193/2000` (clauze abuzive), `Legea 363/2007` (practici incorecte) | drepturile consumatorilor, retragere, garanții |
-| Date personale și securitate cibernetică | `Legea 190/2018` (aplicarea GDPR), `Legea 506/2004` (comunicații electronice), `OUG 155/2024` (NIS2) | protecția datelor, incidente, DNSC |
+| Date personale și securitate cibernetică | `law-doc-201834` (GDPR, Regulamentul (UE) 2016/679, text integral), `Legea 190/2018` (aplicarea GDPR), `Legea 506/2004` (comunicații electronice), `OUG 155/2024` (NIS2) | protecția datelor, incidente, DNSC |
 | Penal | `Codul penal` (Legea 286/2009), `Codul de procedură penală` (Legea 135/2010) | infracțiuni, pedepse, plângeri, prescripție |
 | Contravenții | `OG 2/2001` | proces-verbal, amenzi, plângere contravențională |
 | Administrativ | `OUG 57/2019` (Codul administrativ), `Legea 554/2004` (contenciosul administrativ) | autorități publice, funcționari, acte administrative, acțiuni în contencios |

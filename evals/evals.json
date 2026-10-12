@@ -6,14 +6,14 @@
       "name": "cercetare-speta-date-clienti",
       "skill": "cercetare",
       "prompt": "Un angajat IT al unui marketplace online cu 200 de angajați a copiat fără drept baza de date cu clienții și a vândut-o. Am aflat ieri. Ce infracțiuni a comis, îl putem concedia disciplinar și în ce termen, și ce obligații de raportare avem către DNSC și ANSPDCP?",
-      "expected_output": "Răspuns pe probleme separate: penal (art. 360 și art. 364 Cod penal), muncă (art. 61 lit. a), cercetare disciplinară, decizie în 30 de zile calendaristice de la luarea la cunoștință și cel mult 6 luni de la faptă, art. 252 Codul muncii), NIS2 (OUG 155/2024 art. 15: avertizare în 24 de ore, notificare în 72 de ore, raport final într-o lună, dacă firma e entitate esențială sau importantă) și GDPR (art. 33-34: 72 de ore către ANSPDCP, text UE din afara corpusului).",
+      "expected_output": "Răspuns pe probleme separate: penal (art. 360 și art. 364 Cod penal), muncă (art. 61 lit. a), cercetare disciplinară, decizie în 30 de zile calendaristice de la luarea la cunoștință și cel mult 6 luni de la faptă, art. 252 Codul muncii), NIS2 (OUG 155/2024 art. 15: avertizare în 24 de ore, notificare în 72 de ore, raport final într-o lună, dacă firma e entitate esențială sau importantă) și GDPR (art. 33-34: 72 de ore către ANSPDCP; textul GDPR e în corpus ca law-doc-201834).",
       "files": [],
       "assertions": [
         "Citează art. 360 și/sau art. 364 din Codul penal, cu pedepsele din text",
         "Citează art. 61 lit. a) din Codul muncii pentru concedierea disciplinară",
         "Dă termenul deciziei de sancționare: 30 de zile calendaristice de la luarea la cunoștință și cel mult 6 luni de la faptă, la art. 252 din Codul muncii",
         "Dă termenele din art. 15 din OUG 155/2024: 24 de ore, 72 de ore, o lună, și condiționează aplicarea de calitatea de entitate esențială sau importantă",
-        "Menționează notificarea ANSPDCP în 72 de ore (art. 33 GDPR) și spune că textul GDPR nu e în corpus sau îl marchează de verificat",
+        "Menționează notificarea ANSPDCP în 72 de ore (art. 33 GDPR) și informarea persoanelor vizate (art. 34), cu textul luat din server (GDPR e în corpus)",
         "Începe cu un rezumat scurt (Pe scurt)",
         "Folosește etichete de sursă ([MCP] / [de verificat]) pe citări"
       ]
@@ -22,15 +22,16 @@
       "id": 2,
       "name": "termene-contestatie-anaf",
       "skill": "termene",
-      "prompt": "Mi-a venit în SPV pe 3 noiembrie 2026 o decizie de impunere de la ANAF după o inspecție fiscală. Până când pot depune contestația?",
-      "expected_output": "45 de zile de la comunicare (art. 270 alin. (1) Cod procedură fiscală), calculate după Codul de procedură civilă (art. 75 CPF, art. 181 CPC: zile libere, prorogare la prima zi lucrătoare). Cu data comunicării 3.11.2026, ultima zi este luni, 21.12.2026 (19.12 e sâmbătă). Semnalează că actul electronic se consideră comunicat la data punerii la dispoziție în SPV (art. 47 alin. (15) CPF), nu la data la care a fost deschis.",
+      "prompt": "Mi-a venit în SPV pe 8 septembrie 2026 o decizie de impunere de la ANAF după o inspecție fiscală. Până când pot depune contestația?",
+      "expected_output": "45 de zile de la comunicare (art. 270 alin. (1) Cod procedură fiscală), calculate după Codul de procedură civilă (art. 75 CPF, art. 181 CPC: zile libere, prorogare la prima zi lucrătoare). Cu data comunicării 8.09.2026, a 45-a zi e vineri 23.10, ziua împlinirii (sâmbătă 24.10) nu se socotește și se prorogă, deci ultima zi este luni, 26.10.2026. Semnalează că actul electronic se consideră comunicat la data punerii la dispoziție în SPV (art. 47 alin. (15) CPF) și că termenul de plată și executarea curg separat.",
       "files": [],
       "assertions": [
         "Termenul este de 45 de zile, cu temei art. 270 alin. (1) din Codul de procedură fiscală",
         "Aplică regula de calcul din Codul de procedură civilă (art. 181), prin trimiterea din Codul de procedură fiscală (art. 75)",
-        "Data limită calculată este 21.12.2026 (luni)",
+        "Data limită calculată este 26.10.2026 (luni)",
         "Semnalează că data comunicării prin SPV este data punerii la dispoziție (art. 47 alin. (15) CPF)",
-        "Arată calculul pas cu pas, inclusiv prorogarea de la sâmbătă 19.12.2026"
+        "Arată calculul pas cu pas, inclusiv prorogarea de la sâmbătă 24.10.2026",
+        "Semnalează termenul de plată al sumelor din decizie sau faptul că contestația nu suspendă executarea"
       ]
     },
     {

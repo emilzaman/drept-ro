@@ -73,6 +73,8 @@ Dacă nu poți rula scripte, fă calculul manual și arată fiecare pas.
 **Verificare:** ...
 ```
 
+**Termene care curg în paralel.** Dacă același act declanșează și alte termene care expiră mai devreme, spune-le înainte de termenul întrebat. De exemplu, o decizie de impunere are și un termen de plată, iar contestația nu suspendă de regulă executarea. Ia textul fiecărui termen din server și calculează-l tot cu scriptul.
+
 Lucruri care schimbă data și pe care le semnalezi când apar:
 
 - **Data comunicării.** Comunicarea electronică (SPV, e-mail), prin poștă cu confirmare, prin afișare sau prin publicitate au reguli proprii. Întreabă cum a fost comunicat actul dacă nu e clar. Pentru actele fiscale caută regula comunicării în Codul de procedură fiscală.
