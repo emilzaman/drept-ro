@@ -19,7 +19,7 @@ Comenzile nu sunt obligatorii. O întrebare obișnuită despre legea română po
 ## Instalare în Claude Code
 
 ```
-/plugin marketplace add <calea-către-acest-folder sau owner/repo de pe GitHub>
+/plugin marketplace add emilzaman/drept-ro
 /plugin install drept-ro@drept-ro
 ```
 
