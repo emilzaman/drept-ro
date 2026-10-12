@@ -1,0 +1,71 @@
+{
+  "skill_name": "drept-ro",
+  "evals": [
+    {
+      "id": 1,
+      "name": "cercetare-speta-date-clienti",
+      "skill": "cercetare",
+      "prompt": "Un angajat IT al unui marketplace online cu 200 de angajați a copiat fără drept baza de date cu clienții și a vândut-o. Am aflat ieri. Ce infracțiuni a comis, îl putem concedia disciplinar și în ce termen, și ce obligații de raportare avem către DNSC și ANSPDCP?",
+      "expected_output": "Răspuns pe probleme separate: penal (art. 360 și art. 364 Cod penal), muncă (art. 61 lit. a), cercetare disciplinară, decizie în 30 de zile calendaristice de la luarea la cunoștință și cel mult 6 luni de la faptă, art. 252 Codul muncii), NIS2 (OUG 155/2024 art. 15: avertizare în 24 de ore, notificare în 72 de ore, raport final într-o lună, dacă firma e entitate esențială sau importantă) și GDPR (art. 33-34: 72 de ore către ANSPDCP, text UE din afara corpusului).",
+      "files": [],
+      "assertions": [
+        "Citează art. 360 și/sau art. 364 din Codul penal, cu pedepsele din text",
+        "Citează art. 61 lit. a) din Codul muncii pentru concedierea disciplinară",
+        "Dă termenul deciziei de sancționare: 30 de zile calendaristice de la luarea la cunoștință și cel mult 6 luni de la faptă, la art. 252 din Codul muncii",
+        "Dă termenele din art. 15 din OUG 155/2024: 24 de ore, 72 de ore, o lună, și condiționează aplicarea de calitatea de entitate esențială sau importantă",
+        "Menționează notificarea ANSPDCP în 72 de ore (art. 33 GDPR) și spune că textul GDPR nu e în corpus sau îl marchează de verificat",
+        "Începe cu un rezumat scurt (Pe scurt)",
+        "Folosește etichete de sursă ([MCP] / [de verificat]) pe citări"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "termene-contestatie-anaf",
+      "skill": "termene",
+      "prompt": "Mi-a venit în SPV pe 3 noiembrie 2026 o decizie de impunere de la ANAF după o inspecție fiscală. Până când pot depune contestația?",
+      "expected_output": "45 de zile de la comunicare (art. 270 alin. (1) Cod procedură fiscală), calculate după Codul de procedură civilă (art. 75 CPF, art. 181 CPC: zile libere, prorogare la prima zi lucrătoare). Cu data comunicării 3.11.2026, ultima zi este luni, 21.12.2026 (19.12 e sâmbătă). Semnalează că actul electronic se consideră comunicat la data punerii la dispoziție în SPV (art. 47 alin. (15) CPF), nu la data la care a fost deschis.",
+      "files": [],
+      "assertions": [
+        "Termenul este de 45 de zile, cu temei art. 270 alin. (1) din Codul de procedură fiscală",
+        "Aplică regula de calcul din Codul de procedură civilă (art. 181), prin trimiterea din Codul de procedură fiscală (art. 75)",
+        "Data limită calculată este 21.12.2026 (luni)",
+        "Semnalează că data comunicării prin SPV este data punerii la dispoziție (art. 47 alin. (15) CPF)",
+        "Arată calculul pas cu pas, inclusiv prorogarea de la sâmbătă 19.12.2026"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "verificare-citari-text-mixt",
+      "skill": "verificare-citari",
+      "prompt": "Verifică te rog citările din paragraful ăsta, l-am primit de la un consultant:\n\n\"Conform art. 31 din Codul muncii, perioada de probă este de maximum 30 de zile pentru funcțiile de execuție. Microîntreprinderile plătesc impozit de 3% din venituri, potrivit art. 51 din Codul fiscal. Contestația împotriva deciziei de impunere se depune în 30 de zile, conform art. 270 din Codul de procedură fiscală. Plângerea împotriva procesului-verbal de contravenție se face în 15 zile de la înmânare sau comunicare (art. 31 din OG 2/2001). TVA este reglementată de Legea 571/2003 privind Codul fiscal.\"",
+      "expected_output": "Tabel cu 5 afirmații: art. 31 CM greșit (90 / 120 de zile), art. 51 CF greșit (1% din 2026, prin OUG 89/2025), art. 270 CPF greșit (45 de zile), art. 31 OG 2/2001 corect, Legea 571/2003 abrogată și înlocuită de Legea 227/2015. Corecturi gata de înlocuit.",
+      "files": [],
+      "assertions": [
+        "Marchează afirmația despre art. 31 din Codul muncii ca greșită și dă 90 de zile (execuție) / 120 de zile (conducere)",
+        "Marchează cota de 3% (art. 51 Codul fiscal) ca greșită și dă cota de 1%",
+        "Marchează cele 30 de zile (art. 270 CPF) ca greșite și dă 45 de zile",
+        "Marchează art. 31 din OG 2/2001 (15 zile) ca fiind corect",
+        "Marchează Legea 571/2003 ca abrogată și indică Legea 227/2015",
+        "Are un rând de rezultat cu numărul de afirmații pe verdict",
+        "Dă formulări corectate pentru afirmațiile greșite"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "analiza-document-cim",
+      "skill": "analiza-document",
+      "prompt": "Suntem un SRL mic și vrem să semnăm contractul ăsta cu un angajat nou. E ok?\n\nCONTRACT INDIVIDUAL DE MUNCĂ nr. 14 din 01.10.2026\nFuncția: operator introducere date (funcție de execuție)\nDurata: nedeterminată, începând cu 01.10.2026\nPerioada de probă: 6 luni\nTimp de lucru: normă întreagă, 8 ore/zi, 40 ore/săptămână\nSalariul de bază brut: 3.500 lei/lună\nConcediu de odihnă: 20 zile lucrătoare/an\nClauză de neconcurență: după încetarea contractului, salariatul nu va lucra pentru niciun concurent al angajatorului, pe teritoriul României, timp de 3 ani. Pentru această obligație nu se plătește nicio indemnizație.\nDemisie: salariatul care demisionează va acorda angajatorului un preaviz de 60 de zile lucrătoare.\nPenalitate: dacă salariatul demisionează în primul an, va plăti angajatorului 5.000 lei cu titlu de daune.",
+      "expected_output": "Raport cu probleme pe gravitate: perioada de probă de 6 luni depășește 90 de zile (art. 31 CM); salariul de 3.500 lei e sub minimul de 4.325 lei de la 1.07.2026 (HG 146/2026, art. 164 CM); neconcurența de 3 ani depășește 2 ani (art. 22 CM) și fără indemnizație nu e valabilă (art. 21 CM); preavizul de 60 de zile lucrătoare depășește 20 (art. 81 alin. (4) CM); penalitatea pentru demisie e problematică. Concluzie: nu semnați în forma asta.",
+      "files": [],
+      "assertions": [
+        "Semnalează perioada de probă de 6 luni ca depășind 90 de zile (art. 31 Codul muncii)",
+        "Semnalează salariul de 3.500 lei ca fiind sub salariul minim de 4.325 lei aplicabil din 1 iulie 2026",
+        "Semnalează neconcurența: durata de 3 ani peste maximul de 2 ani (art. 22) și lipsa indemnizației (art. 21)",
+        "Semnalează preavizul de 60 de zile lucrătoare ca depășind 20 de zile lucrătoare (art. 81 alin. (4))",
+        "Semnalează penalitatea de 5.000 lei pentru demisie ca nelegală sau cu risc mare",
+        "Concluzia de la început spune că contractul nu trebuie semnat în forma actuală",
+        "Folosește un tabel cu gravitate pe fiecare problemă"
+      ]
+    }
+  ]
+}

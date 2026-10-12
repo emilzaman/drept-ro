@@ -1,0 +1,19 @@
+{
+  "name": "drept-ro",
+  "owner": {
+    "name": "Emil Zaman"
+  },
+  "metadata": {
+    "description": "Plugin-uri pentru lucrul cu legislația României în Claude Code și Cowork, pe baza serverului Romanian Law MCP."
+  },
+  "plugins": [
+    {
+      "name": "drept-ro",
+      "source": "./plugins/drept-ro",
+      "description": "Cercetare juridică pe legislația României cu textul oficial în vigoare: răspunsuri cu articole exacte, analiza documentelor, calculul termenelor și verificarea citărilor. Folosește serverul Romanian Law MCP (legislatie.just.ro).",
+      "author": {
+        "name": "Emil Zaman"
+      }
+    }
+  ]
+}

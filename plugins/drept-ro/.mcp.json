@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "romanian-law": {
+      "type": "http",
+      "url": "https://romanian-law-mcp-vdv2svnmaa-ew.a.run.app/mcp"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "drept-ro",
+  "version": "0.1.0",
+  "description": "Cercetare juridică pe legislația României cu textul oficial în vigoare: răspunsuri cu articole exacte, analiza documentelor, calculul termenelor și verificarea citărilor. Folosește serverul Romanian Law MCP (legislatie.just.ro).",
+  "author": {
+    "name": "Emil Zaman"
+  },
+  "keywords": ["legal", "romania", "legislatie", "drept", "mcp"]
+}
