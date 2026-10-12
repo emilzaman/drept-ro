@@ -71,6 +71,7 @@ Regulile de scriere:
 - Răspunsul stă în **Pe scurt**. Cine citește doar primul rând trebuie să afle ce are de făcut.
 - Citează cu precizie: „art. 252 alin. (1) din Codul muncii”. Pentru regula esențială, pune textul între ghilimele, scurt (o propoziție sau două).
 - Cifrele (procente, plafoane, termene, amenzi) se iau din textul primit de la server, nu din memorie. Pragurile se schimbă des prin ordonanțe.
+- Când dai o dată calendaristică pentru un termen (o scadență „până la data de 25”, ultima zi de depunere), verifică ziua cu `python3 ../termene/scripts/termen.py --zi AAAA-LL-ZZ`. Dacă e nelucrătoare, termenul se mută de regulă în prima zi lucrătoare (pentru obligațiile fiscale, art. 75 din Codul de procedură fiscală trimite la art. 181 alin. (2) din Codul de procedură civilă). Pentru calcule mai complicate folosește skill-ul `termene`.
 - Dacă un act UE e relevant (GDPR, regulamente vamale), spune că textul lui nu e în corpus. Dă trimiterea cu `[de verificat]` și arată ce act românesc îl aplică (`get_eu_basis`).
 - Când o regulă depinde de o apreciere (abatere „gravă”, clauză „abuzivă”, „bună-credință”), descrie criteriile din lege și marchează decizia `[de analizat]`. Nu decide în locul celui care răspunde pentru ea.
 

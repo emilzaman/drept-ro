@@ -52,6 +52,7 @@ python3 <director-skill>/scripts/termen.py --start AAAA-LL-ZZ --n <număr> --mod
 - Prorogarea e implicită la `libere`, `saptamani`, `luni`, `ani` și oprită la `calendaristice`. O schimbi cu `--prorogare` sau `--fara-prorogare`, după regula din Pasul 2.
 - `--nelucratoare AAAA-LL-ZZ` adaugă o zi liberă stabilită prin hotărâre de guvern. Aceste zile sunt de obicei pentru sectorul public, iar efectul lor asupra termenelor e discutabil, așa că marchează-le `[de analizat]`.
 - `--sarbatori AN` listează sărbătorile legale din art. 139 din Codul muncii pentru anul dat.
+- `--zi AAAA-LL-ZZ` spune dacă o zi e lucrătoare și, dacă nu e, care e prima zi lucrătoare de după ea.
 - `--json` dă rezultatul structurat.
 
 Dacă nu poți rula scripte, fă calculul manual și arată fiecare pas.

@@ -181,12 +181,26 @@ def main(argv: list[str]) -> int:
     ap.add_argument("--nelucratoare", action="append", default=[],
                     help="zi nelucrătoare suplimentară, AAAA-LL-ZZ (se poate repeta)")
     ap.add_argument("--sarbatori", type=int, metavar="AN", help="doar listează sărbătorile legale din anul dat")
+    ap.add_argument("--zi", metavar="AAAA-LL-ZZ",
+                    help="doar spune dacă ziua e lucrătoare și, dacă nu e, care e prima zi lucrătoare de după ea")
     ap.add_argument("--json", action="store_true")
     a = ap.parse_args(argv)
 
     if a.sarbatori:
         for z, nume in sorted(sarbatori_legale(a.sarbatori).items()):
             print(f"{z} {ZILE[z.weekday()]:9} {nume}")
+        return 0
+    if a.zi:
+        cal = Calendar([date.fromisoformat(x) for x in a.nelucratoare])
+        z = date.fromisoformat(a.zi)
+        motiv = cal.motiv_nelucratoare(z)
+        if motiv is None:
+            print(f"{z} ({ZILE[z.weekday()]}) este zi lucrătoare")
+        else:
+            urm = z
+            while not cal.lucratoare(urm):
+                urm += timedelta(days=1)
+            print(f"{z} este nelucrătoare ({motiv}); prima zi lucrătoare: {urm} ({ZILE[urm.weekday()]})")
         return 0
     if a.start is None or a.n is None or a.mod is None:
         ap.error("--start, --n și --mod sunt obligatorii")
