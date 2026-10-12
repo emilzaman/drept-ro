@@ -12,6 +12,7 @@ Fiecare răspuns citează articolul exact și spune de unde vine fiecare afirma�
 | `/drept-ro:analiza-document` | Verifică un document față de lege: decizie ANAF, proces-verbal de contravenție, contract, decizie de sancționare. Arată problemele, gravitatea lor și termenul de contestare. |
 | `/drept-ro:termene` | Calculează data la care expiră un termen legal, cu sărbătorile legale și prorogarea în prima zi lucrătoare. |
 | `/drept-ro:verificare-citari` | Verifică toate trimiterile la lege dintr-un text: dacă articolul există, dacă spune ce susține textul, dacă e în vigoare sau a fost renumerotat. |
+| `/drept-ro:redactare` | Redactează actul propriu-zis (contestație, plângere, notificare, somație, cerere de chemare în judecată, decizie de sancționare, act adițional) cu mențiunile obligatorii cerute de lege și cu termenul de depunere. |
 
 Comenzile nu sunt obligatorii. O întrebare obișnuită despre legea română pornește singură skill-ul potrivit.
 
@@ -47,6 +48,7 @@ plugins/drept-ro/
   references/harta-domenii.md    actele pe domenii și termenii de căutare
   skills/<nume>/SKILL.md
   skills/termene/scripts/termen.py
+  skills/redactare/references/structuri.md
 evals/evals.json                 întrebările de test
 ```
 

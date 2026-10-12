@@ -67,6 +67,23 @@
         "Concluzia de la început spune că contractul nu trebuie semnat în forma actuală",
         "Folosește un tabel cu gravitate pe fiecare problemă"
       ]
+    },
+    {
+      "id": 5,
+      "name": "redactare-plangere-contraventionala",
+      "skill": "redactare",
+      "prompt": "Ieri, 11 octombrie 2026, un agent al Poliției Locale Sector 3 mi-a înmânat un proces-verbal de contravenție pentru parcare pe trotuar, cu amendă de 1.000 lei. Pe proces-verbal nu apare numele agentului, doar gradul și semnătura lui. Scrie-mi plângerea.",
+      "expected_output": "Plângere către judecătorie (art. 32 OG 2/2001: judecătoria de la locul faptei sau de la domiciliu), cu motivul principal nulitatea procesului-verbal pentru lipsa numelui și prenumelui agentului constatator (art. 17 OG 2/2001, nulitate constatată și din oficiu). Termen: 15 zile de la înmânare (art. 31 OG 2/2001), calculat după CPC art. 181: ultima zi marți 27.10.2026. Elementele cererii din art. 194 CPC, cu marcaje [de completat] pentru datele necunoscute, și tabelul mențiunilor obligatorii după act.",
+      "files": [],
+      "assertions": [
+        "Dă termenul de 15 zile (art. 31 OG 2/2001) și ultima zi 27.10.2026 (marți)",
+        "Adresează plângerea judecătoriei competente conform art. 32 OG 2/2001",
+        "Invocă nulitatea procesului-verbal pentru lipsa numelui agentului constatator, cu temei art. 17 OG 2/2001",
+        "Actul cuprinde elementele unei cereri de chemare în judecată (părți, obiect, motive de fapt și de drept, probe, semnătură), cu trimitere la art. 194 CPC sau echivalent",
+        "Folosește marcaje [de completat] pentru datele pe care utilizatorul nu le-a dat (CNP, adresă, număr proces-verbal) și nu le inventează",
+        "După act există o listă sau un tabel cu mențiunile obligatorii verificate",
+        "Corpul actului nu conține etichete de sursă ([MCP], [de verificat]) sau comentarii pentru utilizator"
+      ]
     }
   ]
 }
